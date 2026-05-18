@@ -1,60 +1,243 @@
 <!DOCTYPE html>
-    padding:14px;
-    background:#f8f8f8;
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>证书查询结果</title>
+
+<style>
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+body{
+    background:#f3f3f3;
+    font-family:"Microsoft YaHei",Arial,sans-serif;
+    color:#222;
+}
+
+.container{
+    width:100%;
+    max-width:760px;
+    margin:0 auto;
+    background:#fff;
+    min-height:100vh;
+}
+
+.header{
+    background:#19714c;
+    color:#fff;
+    text-align:center;
+    padding:22px 15px;
+    border-bottom:4px solid #0f5638;
+}
+
+.header h1{
+    font-size:28px;
+    font-weight:600;
+    letter-spacing:1px;
+}
+
+.notice{
+    padding:18px;
+    font-size:16px;
+    line-height:1.8;
+    border-bottom:1px solid #e5e5e5;
+}
+
+.notice span{
+    color:#c00000;
+    font-weight:bold;
+}
+
+.photo{
+    width:240px;
+    height:180px;
+    margin:20px auto;
+    border:1px solid #ddd;
+    background:#fafafa;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    overflow:hidden;
+}
+
+.photo img{
+    width:100%;
+    height:100%;
+    object-fit:cover;
+}
+
+.table{
+    width:calc(100% - 24px);
+    margin:10px auto 20px;
+    border-collapse:collapse;
+}
+
+.table tr{
+    border-bottom:1px solid #e5e5e5;
+}
+
+.table td{
+    padding:14px 10px;
+    font-size:15px;
+}
+
+.table td:first-child{
+    width:38%;
+    background:#fafafa;
+    color:#555;
+    text-align:right;
+    border-right:1px solid #e5e5e5;
+}
+
+.table td:last-child{
+    font-weight:500;
+}
+
+.statement{
+    margin:20px 12px;
+    padding:16px;
+    background:#fafafa;
     border:1px solid #ddd;
     font-size:13px;
-    line-height:1.8;
-    color:#333;
+    line-height:1.9;
+    color:#444;
 }
+
 .footer{
     text-align:center;
-    font-size:13px;
     color:#666;
-    padding:12px;
+    font-size:13px;
+    padding:15px 10px 30px;
 }
+
 @media(max-width:480px){
-    .top h1{font-size:20px;}
-    .result-table{font-size:14px;}
-    .result-table td:first-child{width:40%;}
+
+.header h1{
+    font-size:24px;
+}
+
+.notice{
+    font-size:15px;
+}
+
+.table td{
+    font-size:14px;
+    padding:12px 8px;
+}
+
+.table td:first-child{
+    width:42%;
+}
+
 }
 </style>
+
 </head>
+
 <body>
-<div class="wrapper">
-    <div class="top">
+
+<div class="container">
+
+    <div class="header">
         <h1>证书查询结果</h1>
     </div>
 
     <div class="notice">
-        您输入的证书编号：<span class="no">EC21121002582</span>，查询结果如下：
+        您输入的证书编号：
+        <span>EC21121002582</span>
+        ，查询结果如下：
     </div>
 
-    <div class="photo">图片暂时没有上传</div>
+    <div class="photo">
+        <img src="https://images.unsplash.com/photo-1617038260897-41a1f14a8ca0?q=80&w=1200&auto=format&fit=crop">
+    </div>
 
-    <table class="result-table">
-        <tr><td>鉴定结果：</td><td>石英质玉</td></tr>
-        <tr><td>商贸名称：</td><td>密玉</td></tr>
-        <tr><td>总质量（g）：</td><td>8.37（含绳）</td></tr>
-        <tr><td>形状：</td><td>雕形</td></tr>
-        <tr><td>折射率：</td><td>1.54（点测）</td></tr>
-        <tr><td>密度：</td><td>***</td></tr>
-        <tr><td>光性特征：</td><td>非均质集合体</td></tr>
-        <tr><td>颜色：</td><td>见实物</td></tr>
-        <tr><td>放大检查：</td><td>粒状结构</td></tr>
-        <tr><td>备注：</td><td>***</td></tr>
-        <tr><td>实验号：</td><td>EC21121002582</td></tr>
-        <tr><td>批次号：</td><td>EC2112100054</td></tr>
-        <tr><td>查询码：</td><td>5836</td></tr>
+    <table class="table">
+
+        <tr>
+            <td>鉴定结果：</td>
+            <td>石英质玉</td>
+        </tr>
+
+        <tr>
+            <td>商贸名称：</td>
+            <td>密玉</td>
+        </tr>
+
+        <tr>
+            <td>总质量（g）：</td>
+            <td>8.37（含绳）</td>
+        </tr>
+
+        <tr>
+            <td>形状：</td>
+            <td>雕形</td>
+        </tr>
+
+        <tr>
+            <td>折射率：</td>
+            <td>1.54（点测）</td>
+        </tr>
+
+        <tr>
+            <td>密度：</td>
+            <td>***</td>
+        </tr>
+
+        <tr>
+            <td>光性特征：</td>
+            <td>非均质集合体</td>
+        </tr>
+
+        <tr>
+            <td>颜色：</td>
+            <td>见实物</td>
+        </tr>
+
+        <tr>
+            <td>放大检查：</td>
+            <td>粒状结构</td>
+        </tr>
+
+        <tr>
+            <td>备注：</td>
+            <td>***</td>
+        </tr>
+
+        <tr>
+            <td>实验号：</td>
+            <td>EC21121002582</td>
+        </tr>
+
+        <tr>
+            <td>批次号：</td>
+            <td>EC2112100054</td>
+        </tr>
+
+        <tr>
+            <td>查询码：</td>
+            <td>5836</td>
+        </tr>
+
     </table>
 
     <div class="statement">
+
         本证书结果仅与被检测样品有关，如对证书有疑问或异议，请于证书签发之日起十五日内向检测单位提出，否则视为无异议。证书翻印复制无效。<br><br>
+
         本页面为密玉交易平台证书溯源展示页，用于展示样品检测信息与平台内部溯源记录。证书信息、样品图片及商品信息应以实际检测证书和实物为准。
+
     </div>
 
     <div class="footer">
         密玉文化交易平台 · 证书溯源中心
     </div>
+
 </div>
+
 </body>
 </html>
