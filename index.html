@@ -3,7 +3,7 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>证书查询结果</title>
+<title>珠宝玉石检测证书查询</title>
 
 <style>
 *{
@@ -14,128 +14,79 @@
 
 body{
     background:#f3f3f3;
-    font-family:"Microsoft YaHei",Arial,sans-serif;
-    color:#222;
+    font-family:"Microsoft YaHei",sans-serif;
+    color:#333;
 }
 
 .container{
-    width:100%;
-    max-width:760px;
-    margin:0 auto;
+    max-width:750px;
+    margin:auto;
     background:#fff;
     min-height:100vh;
 }
 
 .header{
-    background:#19714c;
-    color:#fff;
     text-align:center;
-    padding:22px 15px;
-    border-bottom:4px solid #0f5638;
-}
-
-.header h1{
-    font-size:28px;
-    font-weight:600;
-    letter-spacing:1px;
-}
-
-.notice{
-    padding:18px;
-    font-size:16px;
-    line-height:1.8;
+    padding:18px 10px;
+    font-size:22px;
+    font-weight:bold;
     border-bottom:1px solid #e5e5e5;
+    background:#fff;
 }
 
-.notice span{
-    color:#c00000;
+.query-info{
+    padding:18px;
+    line-height:2;
+    font-size:15px;
+    border-bottom:8px solid #f5f5f5;
+}
+
+.query-info span{
+    color:#1565c0;
     font-weight:bold;
 }
 
-.photo{
-    width:240px;
-    height:180px;
-    margin:20px auto;
-    border:1px solid #ddd;
-    background:#fafafa;
-    display:flex;
-    align-items:center;
-    justify-content:center;
-    overflow:hidden;
+.photo-area{
+    padding:30px 0;
+    text-align:center;
+    background:#fff;
 }
 
-.photo img{
+.product-img{
+    width:220px;
+    display:block;
+    margin:auto;
+}
+
+table{
     width:100%;
-    height:100%;
-    object-fit:cover;
-}
-
-.table{
-    width:calc(100% - 24px);
-    margin:10px auto 20px;
     border-collapse:collapse;
-}
-
-.table tr{
-    border-bottom:1px solid #e5e5e5;
-}
-
-.table td{
-    padding:14px 10px;
     font-size:15px;
 }
 
-.table td:first-child{
+td{
+    padding:14px 16px;
+    border-bottom:1px solid #f0f0f0;
+    line-height:1.8;
+}
+
+.left{
     width:38%;
     background:#fafafa;
-    color:#555;
-    text-align:right;
-    border-right:1px solid #e5e5e5;
+    color:#666;
 }
 
-.table td:last-child{
-    font-weight:500;
-}
-
-.statement{
-    margin:20px 12px;
-    padding:16px;
-    background:#fafafa;
-    border:1px solid #ddd;
-    font-size:13px;
-    line-height:1.9;
-    color:#444;
+.right{
+    color:#222;
 }
 
 .footer{
-    text-align:center;
-    color:#666;
+    padding:20px 16px 40px;
     font-size:13px;
-    padding:15px 10px 30px;
-}
-
-@media(max-width:480px){
-
-.header h1{
-    font-size:24px;
-}
-
-.notice{
-    font-size:15px;
-}
-
-.table td{
-    font-size:14px;
-    padding:12px 8px;
-}
-
-.table td:first-child{
-    width:42%;
-}
-
+    line-height:1.9;
+    color:#666;
 }
 </style>
-
 </head>
 
 <body>
@@ -143,96 +94,84 @@ body{
 <div class="container">
 
     <div class="header">
-        <h1>证书查询结果</h1>
+        珠宝玉石检测证书查询
     </div>
 
-    <div class="notice">
-        您输入的证书编号：
-        <span>EC21182014589</span>
-        ，查询结果如下：
+    <div class="query-info">
+        证书编号：<span>EC21182014589</span><br>
+        查询码：<span>5981</span>
     </div>
 
-    <div class="photo">
-        <img src="https://images.unsplash.com/photo-1617038260897-41a1f14a8ca0?q=80&w=1200&auto=format&fit=crop">
+    <div class="photo-area">
+        <img src="./yuzhuo.jpg" class="product-img">
     </div>
 
-    <table class="table">
+    <table>
 
         <tr>
-            <td>鉴定结果：</td>
-            <td>石英质玉</td>
+            <td class="left">鉴定结果</td>
+            <td class="right">石英质玉</td>
         </tr>
 
         <tr>
-            <td>商贸名称：</td>
-            <td>密玉</td>
+            <td class="left">商贸名称</td>
+            <td class="right">密玉</td>
         </tr>
 
         <tr>
-            <td>总质量（g）：</td>
-            <td>58.43</td>
+            <td class="left">总质量(g)</td>
+            <td class="right">58.43</td>
         </tr>
 
         <tr>
-            <td>形状：</td>
-            <td>镯型</td>
+            <td class="left">形状</td>
+            <td class="right">镯形</td>
         </tr>
 
         <tr>
-            <td>折射率：</td>
-            <td>1.54（点测）</td>
+            <td class="left">颜色</td>
+            <td class="right">绿色</td>
         </tr>
 
         <tr>
-            <td>密度：</td>
-            <td>***</td>
+            <td class="left">折射率</td>
+            <td class="right">1.54（点测）</td>
         </tr>
 
         <tr>
-            <td>光性特征：</td>
-            <td>非均质集合体</td>
+            <td class="left">放大检查</td>
+            <td class="right">粒状结构</td>
         </tr>
 
         <tr>
-            <td>颜色：</td>
-            <td>见实物</td>
+            <td class="left">光性特征</td>
+            <td class="right">非均质集合体</td>
         </tr>
 
         <tr>
-            <td>放大检查：</td>
-            <td>粒状结构</td>
+            <td class="left">实验号</td>
+            <td class="right">EC21182014589</td>
         </tr>
 
         <tr>
-            <td>备注：</td>
-            <td>***</td>
+            <td class="left">检测依据</td>
+            <td class="right">
+                GB/T 16552-2017<br>
+                GB/T 16553-2017
+            </td>
         </tr>
 
         <tr>
-            <td>实验号：</td>
-            <td>EC21121002590</td>
-        </tr>
-
-        <tr>
-            <td>批次号：</td>
-            <td>EC2112100054</td>
-        </tr>
-
-        <tr>
-            <td>查询码：</td>
-            <td>5981</td>
+            <td class="left">备注</td>
+            <td class="right">***</td>
         </tr>
 
     </table>
 
-    <div class="statement">
-
-        本证书结果仅与被检测样品有关，如对证书有疑问或异议，请于证书签发之日起十五日内向检测单位提出，否则视为无异议。证书翻印复制无效。<br><br>
-
+    <div class="footer">
+        本证书结果仅与被检测样品有关，如对证书有疑问或异议，请于证书签发之日起十五日内向检测单位提出，否则视为无异议。证书翻印复制无效。<br>
         本页面为密玉交易平台证书溯源展示页，用于展示样品检测信息与平台内部溯源记录。证书信息、样品图片及商品信息应以实际检测证书和实物为准。
-
     </div>
-
 
 </div>
 
