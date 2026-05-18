@@ -1,68 +1,60 @@
 <!DOCTYPE html>
+    padding:14px;
+    background:#f8f8f8;
+    border:1px solid #ddd;
+    font-size:13px;
+    line-height:1.8;
+    color:#333;
+}
+.footer{
+    text-align:center;
+    font-size:13px;
+    color:#666;
+    padding:12px;
+}
+@media(max-width:480px){
+    .top h1{font-size:20px;}
+    .result-table{font-size:14px;}
+    .result-table td:first-child{width:40%;}
+}
+</style>
+</head>
+<body>
+<div class="wrapper">
+    <div class="top">
+        <h1>证书查询结果</h1>
+    </div>
 
-<div class="container">
+    <div class="notice">
+        您输入的证书编号：<span class="no">EC21121002582</span>，查询结果如下：
+    </div>
 
-<div class="search-box">
-    <input type="text" value="EC21121002582">
-    <button>查询</button>
+    <div class="photo">图片暂时没有上传</div>
+
+    <table class="result-table">
+        <tr><td>鉴定结果：</td><td>石英质玉</td></tr>
+        <tr><td>商贸名称：</td><td>密玉</td></tr>
+        <tr><td>总质量（g）：</td><td>8.37（含绳）</td></tr>
+        <tr><td>形状：</td><td>雕形</td></tr>
+        <tr><td>折射率：</td><td>1.54（点测）</td></tr>
+        <tr><td>密度：</td><td>***</td></tr>
+        <tr><td>光性特征：</td><td>非均质集合体</td></tr>
+        <tr><td>颜色：</td><td>见实物</td></tr>
+        <tr><td>放大检查：</td><td>粒状结构</td></tr>
+        <tr><td>备注：</td><td>***</td></tr>
+        <tr><td>实验号：</td><td>EC21121002582</td></tr>
+        <tr><td>批次号：</td><td>EC2112100054</td></tr>
+        <tr><td>查询码：</td><td>5836</td></tr>
+    </table>
+
+    <div class="statement">
+        本证书结果仅与被检测样品有关，如对证书有疑问或异议，请于证书签发之日起十五日内向检测单位提出，否则视为无异议。证书翻印复制无效。<br><br>
+        本页面为密玉交易平台证书溯源展示页，用于展示样品检测信息与平台内部溯源记录。证书信息、样品图片及商品信息应以实际检测证书和实物为准。
+    </div>
+
+    <div class="footer">
+        密玉文化交易平台 · 证书溯源中心
+    </div>
 </div>
-
-<div class="result-title">证书查询结果</div>
-
-<div class="info">
-
-<div class="item">
-<div class="label">证书编号</div>
-<div class="value">EC21121002582</div>
-</div>
-
-<div class="item">
-<div class="label">检测结论</div>
-<div class="value">石英岩玉（密玉）</div>
-</div>
-
-<div class="item">
-<div class="label">总质量</div>
-<div class="value">60.23g</div>
-</div>
-
-<div class="item">
-<div class="label">颜色</div>
-<div class="value">绿色</div>
-</div>
-
-<div class="item">
-<div class="label">形状</div>
-<div class="value">扁圆形</div>
-</div>
-
-<div class="item">
-<div class="label">放大检查</div>
-<div class="value">颗粒状结构</div>
-</div>
-
-<div class="item">
-<div class="label">检测依据</div>
-<div class="value">GB/T 16552-2017</div>
-</div>
-
-<div class="item">
-<div class="label">检测机构</div>
-<div class="value">中维珠宝玉石质量检测中心</div>
-</div>
-
-</div>
-
-<div class="image-box">
-<img src="https://images.unsplash.com/photo-1617038260897-41a1f14a8ca0?q=80&w=1200&auto=format&fit=crop" alt="密玉手镯">
-<p>样品照片（仅对送检样品负责）</p>
-</div>
-
-<div class="footer">
-本查询结果仅对本次查询的证书有效，证书信息如有变更以本中心解释为准。
-</div>
-
-</div>
-
 </body>
 </html>
